@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Caveat:wght@400;600;700&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cream: #F5F0E8;
+  --parchment: #EDE5D0;
+  --warm-tan: #C9A97A;
+  --gold: #B8860B;
+  --deep-brown: #3D2B1F;
+  --soft-brown: #7C5C3E;
+  --rust: #A0522D;
+  --ink: #2C1810;
+  --tape-yellow: rgba(255, 220, 100, 0.55);
+  --tape-blue: rgba(150, 200, 220, 0.5);
+  --font-display: 'Playfair Display', serif;
+  --font-hand: 'Caveat', cursive;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream);
+  font-family: var(--font-body);
+  color: var(--ink);
+  overflow-x: hidden;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='3.5' fill='%23B8860B' opacity='0.65'/%3E%3C/svg%3E") 10 10, auto;
+}
+
+/* Paper grain texture */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--warm-tan); border-radius: 3px; }
+
+/* Selection */
+::selection {
+  background: rgba(185, 134, 11, 0.25);
+  color: var(--deep-brown);
+}

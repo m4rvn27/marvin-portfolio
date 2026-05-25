@@ -1,0 +1,117 @@
+.experience-inner {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.experience-inner--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2.5rem;
+  max-width: 760px;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 5px; top: 8px; bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--warm-tan) 60%, transparent);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.75rem;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.experience-inner--visible .timeline-item {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2.15rem; top: 6px;
+  width: 11px; height: 11px;
+  border-radius: 50%;
+  border: 2px solid var(--warm-tan);
+  background: var(--cream);
+  transition: transform 0.2s ease;
+}
+
+.timeline-item:hover .timeline-dot {
+  transform: scale(1.4);
+}
+
+.timeline-content {
+  padding-left: 0.5rem;
+}
+
+.timeline-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.timeline-date {
+  font-family: var(--font-hand);
+  font-size: 0.9rem;
+  color: var(--rust);
+}
+
+.timeline-type {
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 100px;
+  border: 1px solid;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.timeline-title {
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--deep-brown);
+  margin-bottom: 0.15rem;
+}
+
+.timeline-org {
+  font-size: 0.8rem;
+  color: var(--warm-tan);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.timeline-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.timeline-bullets li {
+  font-size: 0.83rem;
+  color: var(--soft-brown);
+  line-height: 1.75;
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.timeline-bullets li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--warm-tan);
+}
