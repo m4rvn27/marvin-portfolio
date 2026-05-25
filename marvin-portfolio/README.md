@@ -127,7 +127,6 @@ vercel
    git commit -m "initial portfolio"
    git branch -M main
    git remote add origin https://github.com/YOUR_USERNAME/marvin-portfolio.git
-   git push -u origin main
    ```
 2. Go to [vercel.com](https://vercel.com) → **New Project**
 3. Import your GitHub repo
