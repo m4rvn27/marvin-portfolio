@@ -115,7 +115,7 @@ npm install -g vercel
 # Build and deploy
 npm run build
 vercel
-
+;]
 # Follow the prompts — it auto-detects Create React App
 ```
 

@@ -134,6 +134,11 @@ export default function Hero() {
               ))}
             </div>
 
+            <div className="polaroid">
+            <img src="/Marvin-headshot.jpg" alt="Marvin" className="polaroid-img" />
+            <p className="polaroid-caption">marvin ✦</p>
+            </div>
+
             <p className="journal-hi">hi!</p>
             <div className="journal-divider" />
             <p className="journal-text">
