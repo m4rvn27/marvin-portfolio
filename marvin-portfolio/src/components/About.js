@@ -23,20 +23,24 @@ export default function About() {
         <div className="about-grid">
           <div className="about-text">
             <p>
-              I'm Marvin — a first-gen college student at UC Irvine studying Computer Science,
-              currently making the move into Business Information Management in the School of ICS.
-              I care about building technology that actually makes a difference for real people.
+              I'm Marvin, a first-gen student at UC Irvine transitioning from Computer Science to Business 
+              Information Management. Right now, I'm focused on mastering data and problem-solving—like building 
+              SQL databases—with the ultimate goal of learning how to design technology that addresses real-world 
+              human needs.
             </p>
             <p>
-              As VP of La Unidad Latina, Lambda Upsilon Lambda Fraternity at UCI, I've learned
-              that great leadership is really just consistent service — showing up, managing the
-              chaos so others can thrive, and making sure nobody gets left behind.
+              As VP of La Unidad Latina, Lambda Upsilon Lambda Fraternity, Inc. at UCI, I've learned that
+               leadership is a collaborative effort of consistent service; working with my chapter to manage 
+               the logistics so our community can move forward together. This role has allowed me to sharpen 
+               my professional skills in operations and project management while collectively working to uplift 
+               Latino students and champion higher education.
             </p>
             <p>
-              Outside of tech you'll find me exploring restaurants and cafes with friends, admiring
-              art at museums, or deep in a Fortnite lobby. I'm the kind of person who remembers
-              names, asks how you're <em>really</em> doing, and means it. I genuinely believe
-              connection is a superpower.
+              Away from my laptop, I’m usually searching for aesthetic local spots and hidden food gems with 
+              friends, or hopping onto Minecraft and Overwatch to unwind and catch up. For me, whether we are 
+              analyzing an art exhibit or just debriefing our week in a casual game lobby, it's all about the 
+              environment. I place a high value on how I show up for others, aiming to create genuine, comfortable 
+              spaces where everyone feels included and heard.
             </p>
           </div>
 

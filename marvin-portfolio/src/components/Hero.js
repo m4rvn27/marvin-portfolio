@@ -2,11 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Hero.css';
 
 const TITLES = [
-  'CS Student @ UC Irvine',
-  'Full-Stack Builder',
-  'Future BIM Major',
-  'Thai Tea Enthusiast ☕',
-  'Community Builder',
+  'CS Student @ UC Irvine ',
+  'Inerested in Data ',
+  'Future BIM Major ',
+  'Thai Tea Enthusiast ☕ ',
+  'Community Builder ',
 ];
 
 function useTypewriter(words, speed = 80, pause = 1800) {
@@ -101,8 +101,8 @@ export default function Hero() {
         </p>
 
         <p className="hero-bio">
-          A chill but ambitious builder who believes in the power of genuine human connection.
-          I make things that are actually useful — and I always do it with a thai tea in hand.
+          A tech-minded student at UC Irvine who pairs an easygoing attitude with a strong drive to learn. 
+          I'm focused on exploring data and building practical solutions to everyday problems.
         </p>
 
         <div className="hero-btns">
@@ -118,6 +118,14 @@ export default function Hero() {
       </div>
 
       <div className={`hero-right ${visible ? 'hero-right--visible' : ''}`}>
+
+        <div className="polaroid-float">
+          <div className="polaroid">
+            <img src="/Marvin-headshot.jpg" alt="Marvin" className="polaroid-img" />
+            <p className="polaroid-caption">marvin ✦</p>
+          </div>
+        </div>
+
         <div className="journal-wrap">
           <FloatingSticker className="sticker sticker--star">🌟</FloatingSticker>
           <FloatingSticker className="sticker sticker--tea">🍵</FloatingSticker>
@@ -134,17 +142,12 @@ export default function Hero() {
               ))}
             </div>
 
-            <div className="polaroid">
-            <img src="/Marvin-headshot.jpg" alt="Marvin" className="polaroid-img" />
-            <p className="polaroid-caption">marvin ✦</p>
-            </div>
-
             <p className="journal-hi">hi!</p>
             <div className="journal-divider" />
             <p className="journal-text">
-              CS student at UC Irvine, making the move into Business Information Management.
-              I build full-stack apps that actually get used, lead my fraternity chapter as VP,
-              and explore cities with friends on weekends.
+              UCI student transitioning into Business Information Management
+              with a focus on data analysis, SQL, and project management. Outside of my coursework, 
+              I serve as VP of my fraternity chapter and spend my weekends exploring new places with friends.
               <br /><br />
               I genuinely believe that the ability to connect with people is a superpower —
               and I bring that into everything I build and every team I join.
